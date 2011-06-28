@@ -1,5 +1,5 @@
 <?php
-//test
+
 namespace {{ namespace }}\Form{{ entity_namespace ? '\\' ~ entity_namespace : '' }};
 
 use Symfony\Component\Form\AbstractType;
