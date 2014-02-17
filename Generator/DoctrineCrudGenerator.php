@@ -251,6 +251,7 @@ class DoctrineCrudGenerator extends Generator
         $this->renderFile('crud/views/new.html.twig.twig', $dir.'/new.html.twig', array(
             'bundle'            => $this->bundle->getName(),
             'entity'            => $this->entity,
+            'fields'            => $this->metadata->fieldMappings,
             'route_prefix'      => $this->routePrefix,
             'route_name_prefix' => $this->routeNamePrefix,
             'actions'           => $this->actions,
@@ -268,6 +269,7 @@ class DoctrineCrudGenerator extends Generator
             'route_prefix'      => $this->routePrefix,
             'route_name_prefix' => $this->routeNamePrefix,
             'entity'            => $this->entity,
+            'fields'            => $this->metadata->fieldMappings,
             'bundle'            => $this->bundle->getName(),
             'actions'           => $this->actions,
         ));
